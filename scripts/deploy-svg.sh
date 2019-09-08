@@ -37,7 +37,7 @@ TMP=(mktemp)
 jq ".dependencies = $DEPS" package.json > $TMP
 mv $TMP package.json
 
-git add "$ROOT/2" package.json
+git add "$ROOT/2" package.json yarn.lock
 
 git commit -q -m "Publish v$VERSION"
 git push origin $PUBLISH_BRANCH
