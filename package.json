@@ -1,0 +1,39 @@
+{
+  "version": "12.1.2",
+  "name": "twemoji",
+  "license": [
+    "MIT",
+    "CC-BY-4.0"
+  ],
+  "description": "An svg only mirror of twemoji.",
+  "keywords": [
+    "emoji",
+    "DOM",
+    "parser",
+    "images",
+    "retina",
+    "Twitter",
+    "unicode"
+  ],
+  "author": {
+    "name": "Twitter, Inc.",
+    "web": "https://github.com/twitter/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/StileEducation/twemoji.git"
+  },
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "jsonfile": "^5.0.0",
+    "twemoji-parser": "12.1.0",
+    "universalify": "^0.1.2"
+  },
+  "main": "./2/twemoji.npm.js",
+  "module": "./2/twemoji.esm.js",
+  "unpkg": "./2/twemoji.min.js",
+  "files": [
+    "2/twemoji*.js",
+    "2/svg/*"
+  ]
+}
