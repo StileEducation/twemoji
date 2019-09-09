@@ -34,7 +34,7 @@ git pull origin $PUBLISH_BRANCH
 
 cp -r $DIST/*.js  $DIST/*svg* "$ROOT/2"
 TMP=(mktemp)
-jq ".dependencies = $DEPS" package.json > $TMP
+jq ".version = $VERSION | .dependencies = $DEPS" package.json > $TMP
 mv $TMP package.json
 
 git add "$ROOT/2" package.json yarn.lock
