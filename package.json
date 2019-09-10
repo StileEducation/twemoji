@@ -35,7 +35,7 @@
   "scripts": {
     "build": "./scripts/generate",
     "deploy": "./scripts/deploy.sh gh-pages",
-    "deploy-svg": "./scripts/deploy-svg.sh svg",
+    "deploy-svg": "./scripts/deploy-svg.sh master",
     "test": "phantomjs ./src/test/testrunner.js",
     "prepublishOnly": "run-s build test deploy"
   },

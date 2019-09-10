@@ -33,8 +33,8 @@ git checkout $PUBLISH_BRANCH
 git pull origin $PUBLISH_BRANCH
 
 cp -r $DIST/*.js  $DIST/*svg* "$ROOT/2"
-TMP=(mktemp)
-jq ".version = $VERSION | .dependencies = $DEPS" package.json > $TMP
+TMP=$(mktemp)
+jq ".version = \"$VERSION\" | .dependencies = $DEPS" package.json > $TMP
 mv $TMP package.json
 
 git add "$ROOT/2" package.json yarn.lock
