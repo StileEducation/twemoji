@@ -27,15 +27,18 @@ yarn deploy-svg
 This will update the `svg` branch with the latest code and svg assets.
 A dependency in `package.json` of the form
 ```
-"twemoji": "github:StileEducation/twemoji#svg"
+"twemoji": "github:StileEducation/twemoji"
 ```
 will then pull from this repo during a yarn install.
+Make sure to force an update to the `yarn.lock` file (back in the `web-client`):
+```
+yarn upgrade twemoji --latest
+```
 
-Make sure you clean up before building again
+Also, try to clean up before building again (check the output is sane beforehand!):
 ```
 git clean -idx
 ```
-and check the output is sane before cleaning.
 
 # Files
 This branch hosts the built assets for Twemoji, and the folder structure can be summarized as follows:
