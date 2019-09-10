@@ -24,10 +24,11 @@ yarn install
 yarn build
 yarn deploy-svg
 ```
-This will update the `svg` branch with the latest code and svg assets.
+This will update the `master` branch with the latest code and svg assets.
+Find out what the commit that did this was from the output of `yarn deploy-svg` or otherwise, call it `<new-svg-commit>`.
 A dependency in `package.json` of the form
 ```
-"twemoji": "github:StileEducation/twemoji"
+"twemoji": "github:StileEducation/twemoji#<new-svg-commit>"
 ```
 will then pull from this repo during a yarn install.
 Make sure to force an update to the `yarn.lock` file (back in the `web-client`):
