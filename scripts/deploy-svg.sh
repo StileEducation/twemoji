@@ -40,4 +40,5 @@ mv $TMP package.json
 git add "$ROOT/2" package.json yarn.lock
 
 git commit -q -m "Publish v$VERSION"
+git rev-parse HEAD
 git push origin $PUBLISH_BRANCH
