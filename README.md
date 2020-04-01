@@ -1,4 +1,4 @@
-Twemoji with SVGs by Stile Education
+[ARCHIVED] This should not be used anymore. Twemoji with SVGs for use at Stile Education
 ====================================
 
 # Updating from upstream
